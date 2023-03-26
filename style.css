@@ -1,0 +1,12 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    color: red;
+}
+
+.navbar{
+    min-height: 70px;
+    
+}
