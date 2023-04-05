@@ -15,76 +15,79 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <header id="menu" class="p-3 dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="#" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" src="img/logo.png"></img>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-light">Inicio</a></li>
+              <li><a href="#" class="nav-link px-2 text-light">Servicios</a></li>
+              <li><a href="#" class="nav-link px-2 text-light">Nuestros profesionales</a></li>
+              <li><a href="contacto.html" class="nav-link px-2 text-light">Contacto</a></li>
+            </ul>
+
+            <div class="text-end">
+                <a href="login1.html"> <button class="btn btn-light rounded-pill px-3" type="button"> Acceder </button></a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-lg-12 d-flex">
+            <div class="content mx-auto align-self-center">
+                <h3 class="align-text-center">Contacto</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacto">
         <div class="row">
-            <nav class="navbar navbar-expand-lg bg-transparent">
-                <div class="container">
-                    <img  src="img/logo.png" alt="Logo"  width="50" height="40" class="d-inline-block align-text-top" >
-                    <a class="navbar-brand fw-bold ms-2" href="index.html">Rayo Makween<span class="text">.</span></a>
+            <div class="col-lg-12  ">
+                    
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre <span class="asterisco">*</span></label>
+                    <input type="name" class="form-control" id="nombreContacto" placeholder="">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Teléfono <span class="asterisco">*</span></label>
+                    <input type="name" class="form-control" id="numeroTelefonico" placeholder="(+56) 9 xxxxxxxx">
+                </div>
                 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark me-2" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown me-2">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Electrónica Automotriz</a></li>
-                            <li><a class="dropdown-item" href="#">Cajas de Cambio</a></li>
-                            <!--<li><hr class="dropdown-divider"></li>-->
-                            <li><a class="dropdown-item" href="#">Suspensión y Dirección</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link text-dark" href="contacto.html">Contacto</a>
-                        </li>
-                        </ul>
+                
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo <span class="asterisco">*</span></label>
+                    <input type="email" class="form-control" id="correoContacto" placeholder="name@example.com">
+                </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="consulta" rows="3"></textarea>
                     </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 d-flex">
-                <div class="content mx-auto align-self-center">
-                    <h3 class="align-text-center">Contacto</h3>
-                </div>
+                <button type="button" class="btn  me-2"> Enviar </button>
+                
             </div>
         </div>
+    </div>
+    
 
-        <div class="row">
-            <div class="col-6 offset-3 ">
-                <div class="content mx-auto align-self-center">
-                    
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre <span class="text">*</span></label>
-                        <input type="name" class="form-control" id="nombreContacto" placeholder="">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Teléfono <span class="text">*</span></label>
-                        <input type="name" class="form-control" id="numeroTelefonico" placeholder="(+56) 9 xxxxxxxx">
-                    </div>
-                    
-                    
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Correo <span class="text">*</span></label>
-                        <input type="email" class="form-control" id="correoContacto" placeholder="name@example.com">
-                    </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                        <textarea class="form-control" id="consulta" rows="3"></textarea>
-                      </div>
-
-
-                </div>
+    <div class="footer container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Rayo Makween.</span>
             </div>
-        </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/icons8-whatsapp.svg" class="bi" width="24" height="24"></img></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/icons8-instagram.svg"  class="bi" width="24" height="24"></img></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/icons8-facebook-nuevo.svg" class="bi" width="24" height="24"></img></a></li>
+            </ul>
+        </footer>
     </div>
 </body>
